@@ -1,5 +1,5 @@
 export default function GenderFilter({ value, onChange }) {
-  const options = ["all", "male", "female", "other"];
+  const options = ["all", "male", "female", "unisex"];
 
   return (
     <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
