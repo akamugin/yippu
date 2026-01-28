@@ -50,9 +50,9 @@ export default function Page() {
   return (
     <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24 }}>
       <header style={{ marginBottom: 20 }}>
-        <h1 style={{ margin: 0, fontSize: 32 }}>yippu</h1>
+        <h1 style={{ margin: 0, fontSize: 32 }}>Yippu</h1>
         <p style={{ marginTop: 8, opacity: 0.7 }}>
-          Curated outfit inspo (Pinterest preview).
+          衣服(yī fu), but make it 이뻐(yippeo).
         </p>
 
         <GenderFilter value={gender} onChange={setGender} />
