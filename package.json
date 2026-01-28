@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "~/.bun/bin/bunx next dev",
-    "build": "~/.bun/bin/bunx next build",
-    "start": "~/.bun/bin/bunx next start",
-    "lint": "~/.bun/bin/bunx eslint ."
+    "dev": "bunx next dev",
+    "build": "bunx next build",
+    "start": "bunx next start",
+    "lint": "bunx eslint ."
   },
   "dependencies": {
     "next": "^15.1.6",

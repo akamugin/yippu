@@ -9,14 +9,14 @@ export default function LookCard({ look, onOpen }) {
       }}
       style={{
         border: "1px solid #eee",
-        borderRadius: 16,
-        padding: 16,
+        borderRadius: 18,
+        padding: 22,
         cursor: "pointer",
       }}
     >
       <div style={{ fontWeight: 700, marginBottom: 8 }}>{look.title}</div>
 
-      <div style={{ fontSize: 12, opacity: 0.7, marginBottom: 10 }}>
+      <div style={{ fontSize: 14, opacity: 0.7, marginBottom: 10 }}>
         {look.gender.toUpperCase()}
       </div>
 
@@ -26,7 +26,7 @@ export default function LookCard({ look, onOpen }) {
             <span
               key={t}
               style={{
-                fontSize: 12,
+                fontSize: 14,
                 border: "1px solid #ddd",
                 padding: "4px 8px",
                 borderRadius: 999,
@@ -38,7 +38,7 @@ export default function LookCard({ look, onOpen }) {
         </div>
       ) : null}
 
-      <div style={{ marginTop: 12, fontSize: 12, opacity: 0.8 }}>
+      <div style={{ marginTop: 12, fontSize: 14, opacity: 0.8 }}>
         Click to preview →
       </div>
     </div>

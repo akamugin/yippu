@@ -1,10 +1,26 @@
 "use client";
 
 import { useMemo, useState, useEffect } from "react";
+import { Cormorant_Garamond, Noto_Serif_KR, Noto_Serif_SC } from "next/font/google";
 import GenderFilter from "../components/GenderFilter";
 import LookCard from "../components/LookCard";
 import Modal from "../components/Modal";
 import PinterestEmbed from "../components/PinterestEmbed";
+
+const subtitleFont = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const subtitleKr = Noto_Serif_KR({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const subtitleSc = Noto_Serif_SC({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export default function Page() {
   const [gender, setGender] = useState("all");
@@ -50,9 +66,22 @@ export default function Page() {
   return (
     <div style={{ maxWidth: 1100, margin: "0 auto", padding: 24 }}>
       <header style={{ marginBottom: 20 }}>
-        <h1 style={{ margin: 0, fontSize: 32 }}>Yippu</h1>
-        <p style={{ marginTop: 8, opacity: 0.7 }}>
-          衣服(yī fu), but make it 이뻐(yippeo).
+        <h1
+          style={{
+            margin: 0,
+            fontSize: 52,
+            letterSpacing: 0.2,
+            fontWeight: 600,
+          }}
+        >
+          Yippu
+        </h1>
+        <p
+          className={subtitleFont.className}
+          style={{ marginTop: 10, opacity: 0.7, fontSize: 28 }}
+        >
+          <span className={subtitleSc.className}>衣服</span>(yī fu), but make it{" "}
+          <span className={subtitleKr.className}>이뻐</span>(yippeo).
         </p>
 
         <GenderFilter value={gender} onChange={setGender} />
@@ -61,8 +90,8 @@ export default function Page() {
       <main
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
-          gap: 14,
+          gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+          gap: 18,
         }}
       >
         {loading ? (

@@ -15,6 +15,7 @@ export default function GenderFilter({ value, onChange }) {
             cursor: "pointer",
             background: value === opt ? "#111" : "white",
             color: value === opt ? "white" : "#111",
+            fontSize: 16,
           }}
         >
           {opt.toUpperCase()}

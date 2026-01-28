@@ -37,7 +37,7 @@ export default function Modal({ open, onClose, title, children }) {
           }}
         >
           <div>
-            <div style={{ fontWeight: 800, fontSize: 18 }}>{title}</div>
+            <div style={{ fontWeight: 800, fontSize: 20 }}>{title}</div>
           </div>
 
           <button
